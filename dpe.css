@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+:root {
+  --a-color: #16AB7C;
+  --b-color: #51B363;
+  --c-color: #72BC80;
+  --d-color: #ECE436;
+  --e-color: #ECB121;
+  --f-color: #EE833D;
+  --g-color: #DD2129;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.dpe, .co2  {
+  width: 440px;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dpe h5, .co2 h5 {
+  font-weight: 200;
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+.dpe--good {
+  color: green;
+}
+
+.dpe--low {
+  color: orangered;
+}
+
+
+
+/* ================================================== */
+/* ===================== GRID ===================== */
+/* ================================================== */
+
+
+.dpe-grid, .co2-grid  {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 1rem;
+  align-items: center;
+  position: relative;
+}
+
+.dpe-grid .bar, .co2-grid .bar {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  height: 35px;
+  
+}
+
+.dpe-grid .bar, .co2-grid .bar {
+  color: white;
+}
+
+.inf-A, .inf-A-co2 {
+  grid-area: 1/1/2/2;
+}
+
+.inf-B, .inf-B-co2  {
+  grid-area: 2/1/3/2;
+}
+
+.inf-C, .inf-C-co2  {
+  grid-area: 3/1/4/2;
+}
+
+.inf-D, .inf-D-co2  {
+  grid-area: 4/1/5/2;
+}
+
+.inf-E, .inf-E-co2  {
+  grid-area: 5/1/6/2;
+}
+
+.inf-F, .inf-F-co2  {
+  grid-area: 6/1/7/2;
+}
+
+.inf-G, .inf-G-co2  {
+  grid-area: 7/1/8/2;
+}
+
+.bar-A {
+  grid-area: 1/2/2/3;
+  background: var(--a-color);
+  width: 50px;
+  position: relative;
+}
+
+.bar-A::after {
+  height: 23.5px;
+  width: 23.5px;
+  display: block;
+  position: absolute;
+  right: -12px;
+  background-color: var(--a-color);
+  content: "";
+  transform: rotate(45deg);
+}
+
+.bar-B {
+  grid-area: 2/2/3/3;
+  background: var(--b-color);
+  width: 87px;
+  position: relative;
+}
+
+.bar-B::after {
+  height: 23.5px;
+  width: 23.5px;
+  display: block;
+  position: absolute;
+  right: -12px;
+  background-color: var(--b-color);
+  content: "";
+  transform: rotate(45deg);
+}
+
+.bar-C {
+  grid-area: 3/2/4/3;
+  background: var(--c-color);
+  width: 123px;
+  position: relative;
+}
+
+
+.bar-C::after {
+  height: 23.5px;
+  width: 23.5px;
+  display: block;
+  position: absolute;
+  right: -12px;
+  background-color: var(--c-color);
+  content: "";
+  transform: rotate(45deg);
+}
+
+.bar-D {
+  grid-area: 4/2/5/3;
+  background: var(--d-color);
+  width: 160px;
+  position: relative;
+}
+
+.bar-D::after {
+  height: 23.5px;
+  width: 23.5px;
+  display: block;
+  position: absolute;
+  right: -12px;
+  background-color: var(--d-color);
+  content: "";
+  transform: rotate(45deg);
+}
+
+.bar-E {
+  grid-area: 5/2/6/3;
+  background: var(--e-color);
+  width: 195px;
+  position: relative;
+}
+
+.bar-E::after {
+  height: 23.5px;
+  width: 23.5px;
+  display: block;
+  position: absolute;
+  right: -12px;
+  background-color: var(--e-color);
+  content: "";
+  transform: rotate(45deg);
+}
+
+.bar-F {
+  grid-area: 6/2/7/3;
+  background: var(--f-color);
+  width: 230px;
+  position: relative;
+}
+
+.bar-F::after {
+  height: 23.5px;
+  width: 23.5px;
+  display: block;
+  position: absolute;
+  right: -12px;
+  background-color: var(--f-color);
+  content: "";
+  transform: rotate(45deg);
+}
+
+.bar-G {
+  grid-area: 7/2/8/3;
+  background: var(--g-color);
+  width: 265px;
+  position: relative;
+}
+
+.bar-G::after {
+  height: 23.5px;
+  width: 23.5px;
+  display: block;
+  position: absolute;
+  right: -12px;
+  background-color: var(--g-color);
+  content: "";
+  transform: rotate(45deg);
+}
+
+
+/* ================================================== */
+/* ===================== DPE INFO ===================== */
+/* ================================================== */
+
+.dpe__info, .co2__info {
+  color: black;
+  display: flex;
+  border: 2px solid black;
+  position: absolute;
+  right: 15%;
+  top: 0;
+}
+
+.dpe__energy, .dpe__emission, .co2__emission   {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+#dpe__energy__number, #dpe__emission__number, #co2__energy__number, #co2__emission__number {
+  font-size: 1rem;
+}
+
+#dpe__energy__kwhm, #dpe__emission__kgm, #co2__energy__kwhm, #co2__emission__kgm  {
+  font-size: .6rem;
+  font-weight: 300;
+}
+
+.energy, .emission {
+  position: absolute;
+  font-size: .7rem;
+  font-weight: 300;
+  top: -1.1rem;
+}
+
+
+/* ================================================== */
+/* ===================== MODIFIERS ===================== */
+/* ================================================== */
+
+.--active {
+  border-left: 3px solid black;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.--active::after {
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  ;
+}
+
+.--hidden {
+  display: none;
+}

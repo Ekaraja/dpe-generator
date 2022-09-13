@@ -1,0 +1,89 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DPE & CO2 Component</title>
+    <link rel="stylesheet" href="dpe.css">
+    <link rel="stylesheet" href="emission.css">
+    <link rel="stylesheet" href="dpe-and-emission.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Générateur de DPE</h1>
+        <h4>Vanilla JS/HTML/CSS</h4>
+    </header>
+    <section class="dpe__wrapper">
+        <div class="dpe">
+            <h5 class="dpe--good">Haute performance énergétique</h5>
+            <div class="dpe-grid">
+                <article class="dpe__info">
+                    <div class="dpe__energy"><span class="energy">énergie</span><span
+                            id="dpe__energy__number">null</span><span id="dpe__energy__kwhm"">kWH/m</span></div>
+                    <div class=" dpe__emission"><span class="emission">émission</span><span
+                                id="dpe__emission__number">66</span><span id="dpe__emission__kgm"">kg/m</span></div>
+            </article>
+                <div class=" inf-A"> </div>
+                    <div class="inf-B"></div>
+                    <div class="inf-C"></div>
+                    <div class="inf-D"></div>
+                    <div class="inf-E"></div>
+                    <div class="inf-F"></div>
+                    <div class="inf-G"></div>
+
+                    <div class="bar bar-A">A</div>
+                    <div class="bar bar-B">B</div>
+                    <div class="bar bar-C">C</div>
+                    <div class="bar bar-D">D</div>
+                    <div class="bar bar-E">E</div>
+                    <div class="bar bar-F">F</div>
+                    <div class="bar bar-G">G</div>
+            </div>
+            <h5 class="dpe--low">Basse performance énergétique</h5>
+            <form action="/">
+                <label for="dpe-value">Valeur : </label>
+                <input type="text" id="dpe-input" name="dpe-value">
+                <input type="submit" id="dpe-button" value="Valider"></input>
+              </form>
+        </div>
+
+        <div class="co2">
+            <h5 class="co2--good">Peu d'emission de CO2</h5>
+            <div class="co2-grid">
+
+                <article class="co2__info">
+                    <!-- <div class="co2__energy"><span class="energy">énergie</span><span id="co2__energy__number">213</span><span id="co2__energy__kwhm"">kWH/m</span></div> -->
+                    <div class=" co2__emission"><span class="emission">émission</span><span
+                            id="co2__emission__number">66</span><span id="co2__emission__kgm"">kg/m</span></div>
+            </article>
+    
+                <div class=" inf-A-co2"> </div>
+                    <div class="inf-B-co2"></div>
+                    <div class="inf-C-co2"></div>
+                    <div class="inf-D-co2"></div>
+                    <div class="inf-E-co2"></div>
+                    <div class=" inf-F-co2"></div>
+                    <div class="inf-G-co2"></div>
+
+
+
+                    <div class="bar bar-A-co2">A</div>
+                    <div class="bar bar-B-co2">B</div>
+                    <div class="bar bar-C-co2">C</div>
+                    <div class="bar bar-D-co2">D</div>
+                    <div class="bar bar-E-co2">E</div>
+                    <div class="bar bar-F-co2">F</div>
+                    <div class="bar bar-G-co2">G</div>
+            </div>
+            <h5 class="co2--low">Haute émission de CO2</h5>
+        </div>
+    </section>
+
+    <script src="dpe.js"></script>
+    <script src="emission.js"></script>
+</body>
+
+</html>

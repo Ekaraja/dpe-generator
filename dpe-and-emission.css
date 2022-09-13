@@ -1,0 +1,25 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 4rem;
+    text-align: center;
+}
+
+
+header h1 {
+    margin: 0;
+    display: inline-block;
+    background: linear-gradient(to right, #23966c, #faaa54, #e23b4a, #db0768, #360670);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5rem;
+}
+
+header h4 {
+    margin: 0;
+}
+
+.dpe__wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem;
+}
